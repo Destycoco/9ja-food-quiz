@@ -1,0 +1,272 @@
+[
+  {
+    "question": "What is the main ingredient in the Nigerian dish 'jollof rice?'",
+    "options": ["Flour", "Maggi", "Rice", "Pepper"],
+    "answer": 2,
+    "point": 10,
+    "difficulty": "easy",
+    "id": 1
+  },
+  {
+    "question": "Which popular Nigerian street food is made by grilling spicy marinated meat on skewers?",
+    "options": [" Pounded yam and egusi soup", "Moi moi", "Suya", "Akara"],
+    "answer": 2,
+    "point": 10,
+    "difficulty": "easy",
+    "id": 2
+  },
+  {
+    "question": "In Nigerian cuisine, what is 'fufu' typically made from?",
+    "options": ["Wheat", "Cassava", "Plantain", "Rice"],
+    "answer": 1,
+    "point": 10,
+    "difficulty": "easy",
+    "id": 3
+  },
+  {
+    "question": "What is the name of the popular Nigerian breakfast dish made from bean paste and spices, deep-fried into fritters?",
+    "options": ["Puff puff", "Boli", "Moi moi", "Akara"],
+    "answer": 3,
+    "point": 10,
+    "difficulty": "easy",
+    "id": 4
+  },
+  {
+    "question": "Which Nigerian soup is known for its slimy texture and is made from okra, vegetables, and often includes meat or fish?",
+    "options": ["Egusi soup", "Ogbono soup", "Okro soup", "Edikang Ikong"],
+    "answer": 2,
+    "point": 10,
+    "difficulty": "easy",
+    "id": 5
+  },
+  {
+    "question": "What is the traditional Nigerian dish that consists of pounded yam served with a rich and spicy soup?",
+    "options": [
+      "Pounded yam and Egusi soup",
+      "Boli",
+      "Yam porridge",
+      "Efo riro"
+    ],
+    "answer": 0,
+    "point": 10,
+    "difficulty": "easy",
+    "id": 6
+  },
+  {
+    "question": "Which Nigerian snack is made by frying ripe or unripe plantains until they are crispy?",
+    "options": ["Puff puff", "Plantain chips", "Kuli kuli", "Chin chin"],
+    "answer": 1,
+    "point": 10,
+    "difficulty": "easy",
+    "id": 7
+  },
+  {
+    "question": " What is the name of the Nigerian soup that is a specialty of the Efik people, made with a variety of leafy vegetables, seafood, and sometimes meat?",
+    "options": ["Ofe Nsala", "Efo riro", "Oha Soup", "Afang Soup"],
+    "answer": 3,
+    "point": 10,
+    "difficulty": "easy",
+    "id": 8
+  },
+  {
+    "question": "What is the name of the Nigerian dish that consists of grilled plantains served with a spicy pepper sauce?",
+    "options": ["Boli", "Pounded yam", "Moi moi", "Waakye"],
+    "answer": 0,
+    "point": 10,
+    "difficulty": "easy",
+    "id": 9
+  },
+  {
+    "question": "Which Nigerian soup is made with a melon seed base and often includes leafy vegetables and meat or fish?",
+    "options": ["Edikang Ikong", "Oha soup", "Ofe Onugbu", "Egusi soup"],
+    "answer": 3,
+    "point": 10,
+    "difficulty": "easy",
+    "id": 10
+  },
+  {
+    "question": "In Nigerian cuisine, what is the key ingredient that gives 'ofe nsala' (white soup) its distinct flavor?",
+    "options": ["Egusi seeds", "Uziza leaves", "Banga spice", "Ogiri"],
+    "answer": 1,
+    "point": 20,
+    "difficulty": "medium",
+    "id": 11
+  },
+  {
+    "question": "What is the primary ingredient in the Nigerian street food 'puff-puff'?",
+    "options": ["Rice flour", "Cornmeal", "Wheat flour", "Cassava flour"],
+    "answer": 2,
+    "point": 20,
+    "difficulty": "medium",
+    "id": 12
+  },
+  {
+    "question": "In Nigerian cuisine, what is 'suya' typically served with to enhance its flavor?",
+    "options": [
+      "Groundnut paste",
+      "Tomato sauce",
+      "Coconut sauce",
+      "Curry sauce"
+    ],
+    "answer": 0,
+    "point": 20,
+    "difficulty": "medium",
+    "id": 13
+  },
+  {
+    "question": "Which traditional Nigerian soup is made with a combination of waterleaf and ugwu (fluted pumpkin) leaves?",
+    "options": ["Edikang Ikong", "Efo riro", "Afang soup", "Banga soup"],
+    "answer": 0,
+    "point": 20,
+    "difficulty": "medium",
+    "id": 14
+  },
+  {
+    "question": " What is the name of the Nigerian dish made by boiling yams and pounding them into a smooth, stretchy consistency?",
+    "options": ["Amala", "Fufu", "yam porridge", "Pounded yam"],
+    "answer": 3,
+    "point": 20,
+    "difficulty": "medium",
+    "id": 15
+  },
+  {
+    "question": " In Nigerian cuisine, what is 'boli'?",
+    "options": [
+      "Roasted potatoes",
+      "Grilled Plantains",
+      "Fried yams",
+      "Roasted yam"
+    ],
+    "answer": 1,
+    "point": 20,
+    "difficulty": "medium",
+    "id": 16
+  },
+  {
+    "question": "Which Nigerian soup is made with a spicy pepper soup base and includes assorted meats like goat meat, tripe, and cow's foot?",
+    "options": ["Pepper soup", "Oha soup", "Ewedu soup", "Banga soup"],
+    "answer": 0,
+    "point": 20,
+    "difficulty": "medium",
+    "id": 17
+  },
+  {
+    "question": " What is the name of the Nigerian dish made by wrapping a blended beans mixture in banana or plantain leaves and then steaming or boiling it?",
+    "options": ["Moi moi", "Chinchinga", "Asun", "Akara"],
+    "answer": 0,
+    "point": 20,
+    "difficulty": "medium",
+    "id": 18
+  },
+  {
+    "question": "Which Nigerian snack is made by deep-frying balls of dough made from a mixture of wheat flour and sugar?",
+    "options": ["Puff puff", "Suyar", "corn flakes", "Chin chin"],
+    "answer": 0,
+    "point": 20,
+    "difficulty": "medium",
+    "id": 19
+  },
+  {
+    "question": "In Nigerian cuisine, what is the primary ingredient in the dish known as 'ukodo'?",
+    "options": [
+      "Yam and plantain",
+      "Cocoyam and oil bean seed",
+      "Plantain and beans",
+      "Porridge yam and vegetables"
+    ],
+    "answer": 1,
+    "point": 20,
+    "difficulty": "medium",
+    "id": 20
+  },
+  {
+    "question": "What is the key ingredient in the northern Nigerian dish 'miyan kuka'?",
+    "options": [
+      "Baobab leaves",
+      "Hibiscus leaves",
+      "Moringa leaves",
+      "Uziza leaves"
+    ],
+    "answer": 0,
+    "point": 30,
+    "difficulty": "hard",
+    "id": 21
+  },
+  {
+    "question": "In Nigerian cuisine, what is the traditional spice used in preparing 'suya'?",
+    "options": ["Tumeric", "Cloves", "Cinnamon", "Suyar pepper"],
+    "answer": 3,
+    "point": 30,
+    "difficulty": "hard",
+    "id": 22
+  },
+  {
+    "question": "What is the main ingredient in the Nigerian dish 'abacha'?",
+    "options": [
+      "Fermented maize",
+      "Dried corn",
+      "Cassava flakes",
+      "plantain flour"
+    ],
+    "answer": 2,
+    "point": 30,
+    "difficulty": "hard",
+    "id": 23
+  },
+  {
+    "question": "In the Niger Delta region, what is the key ingredient in the preparation of 'ojojo'?",
+    "options": ["Plantain", "Cocoyam", "Yam", "Cassava"],
+    "answer": 1,
+    "point": 30,
+    "difficulty": "hard",
+    "id": 24
+  },
+  {
+    "question": "What is the name of the traditional Yoruba soup made with spinach leaves, assorted meats, and spicy pepper known as tatashe",
+    "options": ["Efo riro", "ogbono soup", "Ewedu soup", "Gbegiri soup"],
+    "answer": 0,
+    "point": 30,
+    "difficulty": "hard",
+    "id": 25
+  },
+  {
+    "question": "Which Nigerian dish is made by boiling cocoyam, yams, and plantains and then mashing them into a thick porridge?",
+    "options": ["Amala", "Fufu", "Eba", "Iyan"],
+    "answer": 3,
+    "point": 30,
+    "difficulty": "hard",
+    "id": 26
+  },
+  {
+    "question": "What is the traditional spice used in preparing the Igbo soup 'ofe onugbu'?",
+    "options": ["Ogiri", "Uda seeds", "Ofor", "Uziza seeds"],
+    "answer": 2,
+    "point": 30,
+    "difficulty": "hard",
+    "id": 27
+  },
+  {
+    "question": "Which Nigerian dish involves boiling rice, beans, and tomatoes together to form a porridge-like consistency?",
+    "options": ["Ofada rice", "Jellof rice", "Samosa", "Waakye"],
+    "answer": 3,
+    "point": 30,
+    "difficulty": "hard",
+    "id": 28
+  },
+  {
+    "question": "In Nigerian cuisine, what is 'ukpaka'?",
+    "options": ["Okra soup", "Bitterleaf soup", "Oil bean soup", "Oha soup"],
+    "answer": 2,
+    "point": 20,
+    "difficulty": "hard",
+    "id": 29
+  },
+  {
+    "question": "In the Niger Delta region, what is the key ingredient in the preparation of 'banga soup'?",
+    "options": ["Palm fruits", "Melon seed", "Cocoyam", "Ukodo spice"],
+    "answer": 0,
+    "point": 20,
+    "difficulty": "hard",
+    "id": 30
+  }
+]

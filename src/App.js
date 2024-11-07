@@ -1,15 +1,15 @@
-import { useEffect, useReducer } from "react";
-import Header from "./Header";
-import Welcome from "./Welcome";
-import Main from "./Main";
-import Loader from "./Loader";
-import Level from "./Level";
-import DisplayQuestion from "./DisplayQuestion";
-import ScoreScreen from "./ScoreScreen";
+import { useEffect, useReducer } from 'react';
+import Header from './Header';
+import Welcome from './Welcome';
+import Main from './Main';
+import Loader from './Loader';
+import Level from './Level';
+import DisplayQuestion from './DisplayQuestion';
+import ScoreScreen from './ScoreScreen';
 
 const initialState = {
   questions: [],
-  status: "loading",
+  status: 'loading',
   level: null,
   index: 0,
   selectedOptions: [],
@@ -22,66 +22,66 @@ const initialState = {
 // const SECS = 25;
 function reducer(state, action) {
   switch (action.type) {
-    case "dataReceived":
+    case 'dataReceived':
       return {
         ...state,
-        status: "ready",
+        status: 'ready',
         questions: action.payLoad,
       };
-    case "selectLevel":
+    case 'selectLevel':
       return {
         ...state,
-        status: "selectLevel",
+        status: 'selectLevel',
       };
-    case "easy":
+    case 'easy':
       return {
         ...state,
-        status: "active",
-        level: "easy",
+        status: 'active',
+        level: 'easy',
         questions: state.questions
           .slice()
-          .filter((question) => question.difficulty === "easy"),
+          .filter((question) => question.difficulty === 'easy'),
         maxPoints: state.questions
-          .filter((question) => question.difficulty === "easy")
+          .filter((question) => question.difficulty === 'easy')
           .reduce((acc, cur) => acc + cur.point, 0),
         maxTime:
           state.questions
             .slice()
-            .filter((question) => question.difficulty === "medium").length * 15,
+            .filter((question) => question.difficulty === 'medium').length * 15,
       };
-    case "medium":
+    case 'medium':
       return {
         ...state,
-        status: "active",
-        level: "medium",
+        status: 'active',
+        level: 'medium',
         questions: state.questions
           .slice()
-          .filter((question) => question.difficulty === "medium"),
+          .filter((question) => question.difficulty === 'medium'),
         maxPoints: state.questions
-          .filter((question) => question.difficulty === "medium")
+          .filter((question) => question.difficulty === 'medium')
           .reduce((acc, cur) => acc + cur.point, 0),
         maxTime:
           state.questions
             .slice()
-            .filter((question) => question.difficulty === "medium").length * 20,
+            .filter((question) => question.difficulty === 'medium').length * 20,
       };
-    case "hard":
+    case 'hard':
       return {
         ...state,
-        level: "hard",
-        status: "active",
+        level: 'hard',
+        status: 'active',
         questions: state.questions
           .slice()
-          .filter((question) => question.difficulty === "hard"),
+          .filter((question) => question.difficulty === 'hard'),
         maxPoints: state.questions
-          .filter((question) => question.difficulty === "hard")
+          .filter((question) => question.difficulty === 'hard')
           .reduce((acc, cur) => acc + cur.point, 0),
         maxTime:
           state.questions
             .slice()
-            .filter((question) => question.difficulty === "medium").length * 25,
+            .filter((question) => question.difficulty === 'medium').length * 25,
       };
-    case "option":
+    case 'option':
       const isCorrect = action.payLoad === state.questions[state.index].answer;
 
       return {
@@ -93,37 +93,37 @@ function reducer(state, action) {
           : state.points,
         maxPoints: state.questions.reduce((acc, cur) => acc + cur.point, 0),
       };
-    case "nextQuestion":
+    case 'nextQuestion':
       return {
         ...state,
         index: state.index + 1,
         choice: null,
       };
-    case "finish":
+    case 'finish':
       return {
         ...state,
-        status: "finished",
+        status: 'finished',
         index: 0,
         highScore:
           state.points > state.highScore ? state.points : state.highScore,
       };
-    case "restart":
+    case 'restart':
       return {
         ...state,
-        status: "selectLevel",
+        status: 'selectLevel',
         selectedOptions: [],
         points: 0,
         questions: action.payLoad,
         choice: null,
       };
-    case "timer":
+    case 'timer':
       return {
         ...state,
         maxTime: state.maxTime - 1,
-        status: state.maxTime === 0 ? "finished" : state.status,
+        status: state.maxTime === 0 ? 'finished' : state.status,
       };
     default:
-      throw new Error("unexpected action");
+      throw new Error('unexpected action');
   }
 }
 function App() {
@@ -145,30 +145,38 @@ function App() {
   const max_possible_questions = questions.length / 3;
 
   // let displayQuestions;
-  console.log(questions);
-  console.log(selectedOptions);
+  // console.log(questions);
+  // console.log(selectedOptions);
 
   // console.log(points);
-  console.log(level);
+  // console.log(level);
   useEffect(() => {
-    fetch("http://localhost:8000/quiz")
-      .then((res) => res.json())
-      .then((data) => dispatch({ type: "dataReceived", payLoad: data }))
-      .catch((err) => dispatch({ type: "dataError" }));
+    const data = require('./data/quiz.json');
+    console.log(data);
+    dispatch({ type: 'dataReceived', payLoad: data });
   }, []);
+  // useEffect(() => {
+  //   fetch('http://localhost:8000/quiz')
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       dispatch({ type: 'dataReceived', payLoad: data });
+  //       console.log(data);
+  //     })
+  //     .catch((err) => dispatch({ type: 'dataError' }));
+  // }, []);
   return (
     <div>
       <Header />
       <Main>
-        {status === "loading" && <Loader />}
-        {status === "ready" && (
+        {status === 'loading' && <Loader />}
+        {status === 'ready' && (
           <Welcome
             questionLength={max_possible_questions}
             dispatch={dispatch}
           />
         )}
-        {status === "selectLevel" && <Level dispatch={dispatch} />}
-        {status === "active" && (
+        {status === 'selectLevel' && <Level dispatch={dispatch} />}
+        {status === 'active' && (
           <DisplayQuestion
             questions={questions}
             index={index}
@@ -181,7 +189,7 @@ function App() {
             maxTime={maxTime}
           />
         )}
-        {status === "finished" && (
+        {status === 'finished' && (
           <ScoreScreen
             maxPoints={maxPoints}
             points={points}
